@@ -184,7 +184,7 @@ Listed in alphabetical order.
   Travis McNeill           `@Travistock`_               @tavistock_esq
   Tubo Shi                 `@Tubo`_
   Umair Ashraf             `@umrashrf`_                 @fabumair
-  Vadim Iskuchekov         `@Egregors`_                 @egregors
+  Vadim Iskuchekov         `@egregors`_                 @egregors
   Vitaly Babiy
   Vivian Guillen           `@viviangb`_
   Vlad Doster              `@vladdoster`_

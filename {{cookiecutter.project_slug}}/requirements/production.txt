@@ -19,3 +19,4 @@ django-storages[boto3]==1.7.1  # https://github.com/jschneier/django-storages
 django-storages[google]==1.7.1  # https://github.com/jschneier/django-storages
 {%- endif %}
 django-anymail[mailgun]==6.0.1  # https://github.com/anymail/django-anymail
+django-csp==3.5  # https://github.com/mozilla/django-csp

@@ -66,6 +66,12 @@ SECURE_CONTENT_TYPE_NOSNIFF = env.bool(
     "DJANGO_SECURE_CONTENT_TYPE_NOSNIFF", default=True
 )
 
+# https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
+CSP_DEFAULT_SRC = ("'self'", "'unsafe-inline'")
+CSP_IMG_SRC = ("'self'", '*', 'data:')
+CSP_FONT_SRC = ("'self'", 'data:')
+CSP_STYLE_SRC = ("'self'", "'unsafe-inline'")
+
 {% if cookiecutter.cloud_provider != 'None' -%}
 # STORAGES
 # ------------------------------------------------------------------------------
