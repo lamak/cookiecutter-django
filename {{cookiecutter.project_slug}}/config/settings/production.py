@@ -66,12 +66,15 @@ SECURE_CONTENT_TYPE_NOSNIFF = env.bool(
     "DJANGO_SECURE_CONTENT_TYPE_NOSNIFF", default=True
 )
 
-{% if cookiecutter.enable_default_csp_headers != 'None' -%}
+{% if cookiecutter.enable_default_csp_headers == 'y' -%}
 # https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
-CSP_DEFAULT_SRC = ("'self'", "'unsafe-inline'")
-CSP_IMG_SRC = ("'self'", '*', 'data:')
+# https://django-csp.readthedocs.io/en/latest/configuration.html#policy-settings
+CSP_DEFAULT_SRC = ("'self'", )
+CSP_CONNECT_SRC = ("'self'", )
+CSP_SCRIPT_SRC = ("'self'", )
+CSP_STYLE_SRC = ("'self'", )
 CSP_FONT_SRC = ("'self'", 'data:')
-CSP_STYLE_SRC = ("'self'", "'unsafe-inline'")
+CSP_IMG_SRC = ("'self'", '*', 'data:')
 {%- endif -%}
 
 {% if cookiecutter.cloud_provider != 'None' -%}
